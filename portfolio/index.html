@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #141414;
+      color: #ffffff;
+      font-family:monospace
+    }
+    .navbar {
+      border-radius: 35px;
+      padding: 10px 20px;
+      background-color: #ffffff;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .highlight {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .subtext {
+      font-size: 1rem;
+      color: #dddddd;
+      line-height: 1.6;
+      
+    }
+    .image-box img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .contents-box {
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .content-item {
+      margin: 10px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .content-item:hover {
+      text-decoration: underline;
+    }
+
+    .card-img-top {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); 
+}
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .project-box {
+      background-color: #d3d3d3;
+      border-radius: 10px;
+      width: 100%;
+      padding-top: 75%; 
+      position: relative;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #ff5733;
+      color: #ffffff;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .back-to-top:hover {
+      background-color: #e44a24;
+    }
+
+    #works {
+    height: 0;
+    overflow: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+    
+</style>
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light mx-3 mt-3">
+    <a class="navbar-brand" href="index.html">Tanushree Rane</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/portfolio/resume.html">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/portfolio/contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/tanushree-rane-462iabci/">LinkedIn</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h1 class="highlight">Hello,<br>I am Tanushree</h1>
+        <p class="subtext">
+          Explore my journey through a blend of branding, logo design, packaging, and more, 
+          each crafted with a distinct approach to style, color, and emotion. With a portfolio 
+          rooted in innovation and versatility, my work captures the essence of art and technology 
+          to create memorable experiences.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="image-box">
+          <img src="images/WhatsApp Image 2024-03-09 at 15.30.04_c1b6cd02.jpg" alt="Profile Image">
+        </div>
+      </div>
+    </div>
+
+ <!-- Contents Section -->
+<h2 class="mt-5 text-left">Contents</h2>
+<div class="contents-box">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 mb-3">
+      <a href="#Logo-Design" class="content-item">Logo Design</a>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-3">
+      <a href="#Sketches" class="content-item">Sketches</a>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-3">
+      <a href="#Branding-projects" class="content-item">Branding Projects</a>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-3">
+      <a href="#Book Design" class="content-item">Book Design</a>
+    </div>
+  </div>
+</div>
+
+<section id="works" style="height: 0; visibility: hidden;"></section>
+
+<!-- The actual Works content -->
+<div style="padding-top: 100px;">
+</div>
+<section id="works">
+  <h2 style="display: none;">Works</h2>
+</section>
+
+
+<!-- Logo Designs Section -->
+<section id="Logo-Design" style="margin-top: 100px;">
+<h3 class="mt-5 text-center">Logo Designs</h3><br>
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 200px;">
+        <img src="images/CAMINA 2-02.png" class="card-img-top" alt="Logo 1" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 200px;">
+        <img src="images/BEKON file-04.png" class="card-img-top" alt="Logo 2" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 200px;">
+        <img src="images/comfort interiors-07.png" class="card-img-top" alt="Logo 3" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 200px;">
+        <img src="images/SHE WALKS UDH-33.png" class="card-img-top" alt="Logo 4" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 200px;">
+        <img src="images/Untitled-4.jpg" class="card-img-top" alt="Logo 5" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 200px;">
+        <img src="images/O6AA7T1.png" class="card-img-top" alt="Logo 6" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Branding & Packaging Section -->
+<section id="Branding-projects" style="margin-top: 100px;">
+<h3 class="mt-5 text-center">Branding & Packaging</h3> <br>
+<div class="container">
+  <div class="row g-4 justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="border: none;">
+        <a href="https://www.behance.net/gallery/198231927/Western-Tango" target="_blank"><img src="images/Untitled-1-02.jpg" class="card-img-top" alt="Branding 1" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;"></a>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="border: none;">
+        <a href="https://www.behance.net/gallery/214273473/Nova-Candle-Brand" target="_blank"><img src="images/nova branding-05.png" class="card-img-top" alt="Branding 1" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;"></a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sketches Section -->
+<section id="Sketches" style="margin-top: 100px;">
+<h3 class="mt-5 text-center">Sketches</h3>
+<div class="container mt-4">
+  <h4 class="text-left">1. Anime Sketches</h4>
+  <div class="row justify-content-center">
+    <!-- Anime Sketch 1 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 400px;">
+        <img src="images/yuta.jpg" class="card-img-top" alt="Anime Sketch 1" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Anime Sketch 2 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 400px;">
+        <img src="images/chainsaw man.jpg" class="card-img-top" alt="Anime Sketch 2" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Anime Sketch 3 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="width: 100%; height: 400px;">
+        <img src="images/IMG-20240319-WA0038.jpg" class="card-img-top" alt="Anime Sketch 3" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+  </div>
+
+  <h4 class="text-left mt-5">2. Eyes</h4>
+  <div class="row justify-content-center">
+    <!-- Eye Sketch 1 -->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <div class="card" style="width: 100%; height: 300px;">
+        <img src="images/IMG-20240319-WA0046.jpg" class="card-img-top" alt="Eye Sketch 1" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+    <!-- Eye Sketch 2 -->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <div class="card" style="width: 100%; height: 300px;">
+        <img src="images/eyes.jpg" class="card-img-top" alt="Eye Sketch 2" style="height: 100%; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Book Design Section -->
+<section id="Book Design" style="margin-top: 100px;">
+<h3 class="mt-5 text-center">Book Design</h3><br>
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="cursor: pointer;" data-toggle="modal" data-target="#modal1">
+        <img src="images/brutalism 1.png" class="card-img-top" alt="Brutalism Glossary Book" style="height: 200px; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+
+    <!-- Modal for Card 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Brutalism Glossary Book</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Images Inside Modal -->
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <img src="images/brutalism 1.png" alt="CAMINA Image 1" class="img-fluid" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-12 mb-3">
+                <img src="images/Free_Book_Mockup_3.png" alt="CAMINA Image 1" class="img-fluid" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-12 mb-3">
+                <img src="images/brutalism 2.png" alt="CAMINA Image 1" class="img-fluid" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-12 mb-3">
+                <img src="images/brutalism 3.png" alt="CAMINA Image 2" class="img-fluid" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-12 mb-3">
+                <img src="images/brutalism 4.png" alt="CAMINA Image 3" class="img-fluid" style="border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat for Other Cards -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card" style="cursor: pointer;" data-toggle="modal" data-target="#modal2">
+        <img src="images/kawai.png" class="card-img-top" alt="BEKON" style="height: 200px; object-fit: cover; border-radius: 10px;">
+      </div>
+    </div>
+
+     <!-- Modal for Card 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">KAWAI SUSHI Cookbook</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Images Inside Modal -->
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <img src="images/kawai.png" alt="" class="img-fluid" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-12 mb-3">
+                <img src="images/kawai2.png" alt="" class="img-fluid" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-12 mb-3">
+                <img src="images/kawai3.png" alt="" class="img-fluid" style="border-radius: 10px;">
+              </div>
+              <div class="col-md-12 mb-3">
+                <img src="images/Free_Book_Mockup_6.png" alt="" class="img-fluid" style="border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopButton">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script>
+    // Show/hide back to top button
+    window.onscroll = function() {
+      const backToTopButton = document.getElementById("backToTopButton");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = "flex";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    // Scroll back to top
+    document.getElementById("backToTopButton").onclick = function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+
+    
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
